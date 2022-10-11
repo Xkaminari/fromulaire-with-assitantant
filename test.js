@@ -2,8 +2,6 @@ const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
 const theForm = document.querySelector('form')
 const results = document.querySelector('#informationFiled')
-let userFirstNam = document.getElementById("firstNam").value;
-let userLastNam = document.getElementById("lastName").value;
 
 function speak(sentence) {
     const text_speak = new SpeechSynthesisUtterance(sentence);
@@ -27,19 +25,19 @@ function wishMe() {
     }
 }
 
-function submitForm() {
-    // speak(`Vos données ont été enregistrées avec succès, ravie de vous rencontrer${userFirstNam + userLastNam}.`);
-    console.log("the fuck");
-    console.log(userFirstNam);
-    console.log(userLastNam);
+function submitForm(e) {
+    let userFirstNom = document.getElementById("firstNam").value;
+    let userLastNom = document.getElementById("lastName").value;
+    e.preventDefault()
+    speak(`Vos données ont été enregistrées avec succès, ravie de vous rencontrer${userFirstNom + userLastNom}.`);
     theForm.style.display = "none";
     results.style.display = "block"
 }
 
 window.addEventListener('load', ()=>{
-    // speak("Initialisation de l'assistant vocal");
-    // wishMe();
-    // speak("Je me nome MYC et je serais votre assistant durant le remplissage de se formulaire !");
+    speak("Initialisation de l'assistant vocal");
+    wishMe();
+    speak("Je me nome MYC et je serais votre assistant durant le remplissage de se formulaire !");
 })
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
