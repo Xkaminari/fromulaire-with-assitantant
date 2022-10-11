@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+body {
+    background-color: #050505;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.assistantNam {
+    font-weight: 700;
+    color: #d1d400;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.speakToAssistant {
+    display: flex;
+    align-items: center;
+}
+
+.talk {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #d1d400;
+    border: none;
+    text-align: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.fa-microphone-alt {
+    margin-left: 3px;
+}
+
+.content {
+    color: aliceblue;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+}
+
+.textFields {
+    display: block;
+    height: 100px;
+    width: 70vw;
+    background: none;
+    border: none;
+    border-bottom:5px solid #d1d400;
+    margin: 5px;
+    padding: 0;
+    outline: none;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+
+.textFields::placeholder {
+    color: aliceblue;
+}
+
+.thirdLineForm {
+    display: flex;
+    align-items: center;
+}
+
+select {
+    height: 100px;
+}
+
+.TFthird1 {
+    height: 100px;
+    width: 34.8vw;
+}
+
+.TFthird2 {
+    height: 105px;
+    width: 34.8vw;
+}
+
+input:autofill {
+    background-color: none !important;
+    color: aliceblue !important;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: aliceblue;
+    -webkit-box-shadow: none;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+option {
+    background-color: #050505;
+}
+
+#formButt {
+    height: 100px;
+    width: 70vw;
+    border: none;
+    margin: 5px;
+    background-color: #d1d400;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#formButt:hover {
+    box-shadow: rgba(209, 212, 0, 0.4) 5px 5px, rgba(209, 212, 0, 0.3) 10px 10px, rgba(209, 212, 0, 0.2) 15px 15px, rgba(209, 212, 0, 0.1) 20px 20px, rgba(209, 212, 0, 0.05) 25px 25px;
+}
+
+h3 {
+    color: aliceblue;
+    font-size: 4em;
+}
+
+.personalInfo {
+    color: #d1d400;
+    font-weight: 400;
+}
+
+#informationFiled {
+    display: none;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #d1d400;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+    main {
+        height: 80vh;
+        align-items: flex-start;
+    }
+    footer {
+        margin-top: 0;
+    }
+}

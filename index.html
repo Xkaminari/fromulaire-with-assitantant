@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYC - Assistant</title>
+    <script src="test.js" defer></script>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/0b88fa2e74.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1><span class="assistantNam">MYC</span> ASSISTANT</h1>
+        <div class="speakToAssistant">
+            <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+            <p class="content"></p>
+        </div>
+    </header>
+    <main>
+        <form >
+            <input class="textFields" type="text" id="firstNam" placeholder="Nom">
+            <input class="textFields" type="text" id="lastName" placeholder="Prénom">
+            <div class="thirdLineForm">
+                <input class="textFields TFthird1" type="number" min="1" max="99" id="NAM" placeholder="Âge">
+                <select class="textFields TFthird2" id="Gender">
+                    <option selected>Choisiser votre genre</option>
+                    <option>Homme</option>
+                    <option>Femme</option>
+                    <option>Ne pas préciser</option>
+                </select>
+            </div>
+            <input class="textFields" type="email" id="userEmail" placeholder="Exemple@gmail.com">
+            <button onclick="submitForm()" id="formButt">Submit</button>
+        </form>
+        <div id="informationFiled">
+            <h3>Votre nom est: <span class="personalInfo" id="UserFirstName">chahboun</span></h3>
+            <h3>Votre prénom est: <span class="personalInfo" id="UserLastName">Med Yassine</span></h3>
+            <h3>Votre âge: <span class="personalInfo" id="UserAge">18</span></h3>
+        </div>
+    </main>
+    <footer>
+        <a target="_blank" href="https://github.com/Xkaminari">&copy;Med Yassine chahboun's github</a>
+    </footer>
+</body>
+</html>
